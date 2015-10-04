@@ -1,0 +1,35 @@
+/*
+MET CS665 HW1
+Fall 2015
+Xiaoli Ma
+U20532071
+*/
+
+Run GamePlay to test the program.
+
+This Soccer Game is designed in a Observer pattern, which Robot objects are observers of the SoccerBall object.
+When the SoccerBall changes positions, all robots are notified and robots can react accordingly.
+Player function class is designed in a Strategy pattern so that each play style can be implemented in further details with abstraction from the interface.
+
+
+List of Files:
+(Test Program)
+GamePlay.java
+
+<<Interfaces>>
+Observer.java
+Subject.java
+Player.java 
+
+(Classes)
+Robot -- implements Observer interface
+SoccerBall --implements Subject interface
+Pos -- XY coordinates of SoccerBall
+(ENUM)
+Position -- finite set of soccer player positions
+
+(Play classes which defines style of play functionality,implements Player interface)
+DefenderPlayer.java 
+ForwardPlayer.java
+GoalkeeperPlayer.java
+MidfielderPlayer.java
